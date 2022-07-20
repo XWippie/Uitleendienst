@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><defs><filter id="a" x="3" y="3" width="27.5" height="29.5" filterUnits="userSpaceOnUse"><feOffset dx="1.5" dy="1.5" input="SourceAlpha"/><feGaussianBlur result="b"/><feFlood flood-color="#37b2a8"/><feComposite operator="in" in2="b"/><feComposite in="SourceGraphic"/></filter><clipPath id="d"><rect width="32" height="32"/></clipPath></defs><g id="c" clip-path="url(#d)"><g transform="translate(3 3)"><g transform="matrix(1, 0, 0, 1, -3, -3)" filter="url(#a)"><text transform="translate(3 3)" fill="#4ffcf0" font-size="25" font-family="Super-Legend-Boy, Super Legend Boy"><tspan x="0.5" y="22">C</tspan></text></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-favicon-32x32">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="favicon-32x32" clip-path="url(#clip-favicon-32x32)">
+    <g id="Component_2_3" data-name="Component 2 – 3">
+      <path id="Union_1" data-name="Union 1" d="M9.373,32,0,22.628V9.373L9.373,0H22.628L32,9.373V22.628L22.628,32ZM6,11.858v8.285L11.858,26h8.285L26,20.142V11.858L20.142,6H11.858ZM13.929,21,11,18.071V13.929L13.929,11h4.142L21,13.929v4.142L18.071,21Z" fill="#71bf44"/>
+    </g>
+  </g>
+</svg>
