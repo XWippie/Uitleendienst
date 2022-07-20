@@ -1,6 +1,6 @@
 {
-  "name": "Checkers",
-  "short_name": "Checkers",
+  "name": "Uitleendienst",
+  "short_name": "Uitleendienst",
   "icons": [
     {
       "src": "/Android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#4FFCF0",
-  "background_color": "#4FFCF0",
+  "theme_color": "#DDDBCB",
+  "background_color": "#DDDBCB",
   "display": "standalone"
 }
