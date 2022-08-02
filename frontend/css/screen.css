@@ -251,7 +251,7 @@ a:focus {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  margin-left: 72.5px;
+  max-width: 0 10rem;
 }
 
 /*
@@ -448,48 +448,61 @@ a:focus {
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
-.c-navbar {
-  background: var(--color-1-1);
+:root {
+  --nav-width-collapsed: 4rem;
+  --nav-width-open: 10rem;
+}
+nav {
   position: fixed;
-  height: 100%;
-  padding: 16px 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  height: 100vh;
+  width: var(--nav-width-collapsed);
+  background: #555;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+nav:hover,
+nav.pinned {
+  width: var(--nav-width-open);
+}
+#logo {
+  background: #ff6600;
+  height: var(--nav-width-collapsed);
+  line-height: var(--nav-width-collapsed);
+  padding-left: 0.7rem;
+}
+a {
+  color: #eee;
+  text-decoration: none;
+  display: table;
+  /* //padding:.8rem 0; */
+  width: var(--nav-width-open);
+}
+a .active .fa {
+  border-left: 3px solid #f60;
+  border-right: 3px solid transparent;
+}
+a:hover {
+  background: #444;
+  color: #bee0ff;
+}
+a .fa {
+  width: var(--nav-width-collapsed);
+  display: table-cell;
+  font-size: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+a.label {
+  display: table-cell;
 }
 
-.c-navbar-item {
-  padding: 16px 16px;
-  display: flex;
-  justify-content: center;
+section {
+  padding: 2rem 5rem 2rem var(--nav-width-collapsed) + 5;
+  min-height: 100vh;
 }
-
-.c-navbar-item:hover,
-.c-navbar-item:focus {
-  background: var(--color-1-5);
-  border-radius: 0 10px 10px 0;
-}
-
-.c-navbar-item:hover i,
-.c-navbar-item:focus i {
-  color: var(--gray-1);
-}
-
-.c-navbar-link i {
-  font-size: 36px;
-  color: var(--gray-10);
-}
-
-.c-header {
-  padding: 48px 48px 16px;
-  background: var(--gray-1);
-}
-.c-header-text {
-  padding-left: 8px;
-  border-left: 4px solid var(--color-1-1);
-  font-size: 48px;
-  font-weight: 700;
+h1 {
+  font-family: Raleway, Roboto, sans-serif;
+  font-size: 2.2rem;
 }
 
 /*------------------------------------*\
